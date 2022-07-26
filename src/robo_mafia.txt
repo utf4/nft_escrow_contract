@@ -1,0 +1,36 @@
+hamza_sajid@DESKTOP-HQKDS9G:/mnt/c/Users/HAMZA/Documents/BlockChain/Staking/staking-nft-contract$ spl-token create-token --decimals 0
+Creating token 7WguxQHizt3KgrQhPZZfZjyusQBmjfe1MoEAoTbaXPWr
+
+Signature: 46AjZNVWCUPJjoo1qd4kMWg385hpDjkwYaQdipCGtmZCkPsmaaiooWxWXBceic6U6TNXtEUg9So158yJ354PMgPs
+------------------------------
+
+hamza_sajid@DESKTOP-HQKDS9G:/mnt/c/Users/HAMZA/Documents/BlockChain/Staking/staking-nft-contract$ spl-token create-account 7WguxQHizt3KgrQhPZZfZjyusQBmjfe1MoEAoTbaXPWr
+Creating account gvEqWU7UD91zLCBN7dH6EXgUWC5HCtvsB8CqMxzaWSk
+
+Signature: 2E5AjfUACu85nCvHNsxgatLr3LHKwvCoGWfyXYh7hWq4DUC4rd6ie3gPnUMHdufxgqTMGuLUG5W5tdcQnz4Kvnxx
+------------------------------
+hamza_sajid@DESKTOP-HQKDS9G:/mnt/c/Users/HAMZA/Documents/BlockChain/Staking/staking-nft-contract$ spl-token mint 7WguxQHizt3KgrQhPZZfZjyusQBmjfe1MoEAoTbaXPWr 100000
+Minting 100000 tokens
+  Token: 7WguxQHizt3KgrQhPZZfZjyusQBmjfe1MoEAoTbaXPWr
+  Recipient: gvEqWU7UD91zLCBN7dH6EXgUWC5HCtvsB8CqMxzaWSk
+
+Signature: 3NqH44WKTiZ8UmTjxJ6py1eJUM5NuCedrLYghWurps5oWby7nFG16Z3mXedgGzKLtSxedAR8DSKnmKaNESMQxAGV
+------------------------------------
+hamza_sajid@DESKTOP-HQKDS9G:/mnt/c/Users/HAMZA/Documents/BlockChain/Staking/staking-nft-contract$ solana program deploy /mnt/c/Users/HAMZA/Documents/BlockChain/Staking/staking-nft-contract/target/deploy/staking.so
+Program Id: DdVRg5ShLaRtYoPReDPaRqj8jem6P324Unv9QZ1U14Jw
+------------------------------------
+vault account generated: HmX7qxZBtME76AfopLyFzm3ikeqG8K3cVMzRJnnqV9wa
+tx id: 4odnbiMpnFZpczvdXZXMccPfYQwA6mTKexamcV5AYHwNb5mggYrENZVUDjCd8mzxoQ1MbHWF61Hv8zrdzdrLb87P
+-----------------------------------
+C:\Users\HAMZA\Documents\BlockChain\Staking\staking-nft-client\target\debug>spl-token transfer 7WguxQHizt3KgrQhPZZfZjyusQBmjfe1MoEAoTbaXPWr 100000 HmX7qxZBtME76AfopLyFzm3ikeqG8K3cVMzRJnnqV9wa --fund-recipient
+Transfer 100000 tokens
+  Sender: gvEqWU7UD91zLCBN7dH6EXgUWC5HCtvsB8CqMxzaWSk
+  Recipient: HmX7qxZBtME76AfopLyFzm3ikeqG8K3cVMzRJnnqV9wa
+  Recipient associated token account: 6yN4QKvvSzLZHwdT5YzT2KQtJUzs7R4U26G92gaRMdz7
+  Funding recipient: 6yN4QKvvSzLZHwdT5YzT2KQtJUzs7R4U26G92gaRMdz7 (0.00203928 SOL)
+
+Signature: 3yGSmZN4uuwgLLvCrv64wFVEPWMXx8R3bk9HxoeL2AXzHsE51yCiEQ2an4NbSSFTStMdY27P16Br386amC5fSh4p
+------------------------------
+C:\Users\HAMZA\Documents\BlockChain\Staking\staking-nft-client\target\debug>staking-nft-client.exe add_to_whitelist -e dev -s devnet-test.json --reward 1 --candy_machine 9ErQ1h4kLcQEx8EMe3PSr8M4uPPGu9vByqG22tbDw9s5      
+tx id: 4E3t91fH64Mm5wzHq12MRxKLvMP4Uuq4ohNFRCwn8eDZsLjgzmzh5EQrECpQdcAQYcKR8SFDc8RM4oKKMAZUW9sX
+------------------------------
